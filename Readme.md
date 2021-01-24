@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наумчик Ирина](https://up.htmlacademy.ru/htmlcss/30/user/1692143).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Бреев] (https://htmlacademy.ru/profile/blckwltz).
 
 ---
 
