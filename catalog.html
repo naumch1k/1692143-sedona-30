@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body>
@@ -10,7 +14,7 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="https://via.placeholder.com/138x70"  alt="Логотип City of Sedona">
+          <img src="img/logo.svg"  width="138" height="70" alt="Логотип City of Sedona">
         </a>
         <ul>
           <li><a href="blank.html">Информация</a></li> <!--3.3. Главное меню: пункт «Информация» не является ссылкой на главную страницу.-->
@@ -31,15 +35,15 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="pool" id="pool" checked>
+                <input type="checkbox" name="features" value="pool" id="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="parking" id="parking">
+                <input type="checkbox" name="features" value="parking" id="parking">
                 <label for="parking">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="wifi" id="wifi">
+                <input type="checkbox" name="features" value="wifi" id="wifi">
                 <label for="wifi">WI-FI</label>
               </li>
             </ul>
@@ -49,29 +53,31 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
+                <input type="checkbox" name="type" value="hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="motel" id="motel" checked>
+                <input type="checkbox" name="type" value="motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="apartments" id="apartments" checked>
+                <input type="checkbox" name="type" value="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset>
-            <legend><label for="price">Стоимость в сутки (Р):</label></legend> <!--Нужен ли здесь laber for="" ? -->
-            <input type="number" name="price" id="price" min="0" max="3000" value="2200"> <!--все остальное CSS?-->
-            <p>от 0</p> <!--валидатор не дает поставить между <fieldset> и <legend>. Потом поднимем CSS?-->
-            <p>до 3000</p> 
+            <legend>Стоимость в сутки (Р):</legend>
+            <label for="min">От</label><!--сделаем лэйблом для output-->
+            <input type="range" name="price" value="0" min="0" max="4000" step="100" id="min">
+            <output for="min"></output><!--это мы еще не умеем. Это JS?-->
+            <label for="max">До</label>
+            <input type="range" name="price" value="3000" min="0" max="4000" step="100" id="max">
+            <output for="max"></output>
           </fieldset>
 
           <button type="submit">Показать</button>
-
         </form>
       </section>
 
@@ -79,27 +85,27 @@
         <h2>Список гостиниц</h2> <!--hidden-->
         <ul>
           <li>
-            <img src="https://via.placeholder.com/135x90" alt="Amara Resort & Spa">
+            <img src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
             <h3>Amara Resort &AMP; Spa</h3>
             <p>Гостиница</p>
             <p>От 4000 Р.</p>
-            <img src="https://via.placeholder.com/19x17" alt="Четыре звезды"> <!--всей душой верю, что они контентные-->
+            <img src="img/star.svg" width="19" height="17" alt="Четыре звезды"> <!--пока не поняла, как сделать несколько. Добавить 4 изобр. здесь и оформить CSS. Или как-то экспортировать одним изображением?-->
             <p>Рейтинг: 8,5</p>
           </li>
           <li>
-            <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
+            <img src="img/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn">
             <h3>Desert Quail Inn</h3>
             <p>Мотель</p>
             <p>От 3000 Р.</p>
-            <img src="https://via.placeholder.com/19x17" alt="Три звезды">
+            <img src="img/star.svg" width="19" height="17" alt="Три звезды">
             <p>Рейтинг: 8,9</p>
           </li>
           <li>
-            <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
+            <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             <h3>Villas at Poco Diablo</h3>
             <p>Апартаменты</p>
             <p>От 2000 Р.</p>
-            <img src="https://via.placeholder.com/19x17" alt="Две звезды">
+            <img src="img/star.svg" width="19" height="17" alt="Две звезды">
             <p>Рейтинг: 9,2</p>
           </li>
         </ul>
@@ -131,7 +137,7 @@
       </section>
       <p>
         website by
-        <a href=https://htmlacademy.ru/intensive/htmlcss target="_blank"><img src="https://via.placeholder.com/115x41" alt="Логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
       </p>
     </footer>
 
