@@ -20,27 +20,12 @@
 
 :root {
   --basic-white: #ffffff;
+  --semitransparent-white: rgba(255, 255, 255, 0.3);
   --basic-black: #000000;
   --basic-blue: #81b3d2;
   --basic-grey: #333333;
-  --brown-button-bg-default: #766357;
-  --brown-button-bg-hover: #604E43;
-  --brown-button-bg-active: #503E33;
-  --blue-button-bg-hover: #669EC0;
-  --blue-button-bg-active: #5496BD;
-  --button-active: rgba(255, 255, 255, 0.3);
-  --htmlacademy-logo-default: #231f20;
-  --htmlacademy-logo-active: #bdbbbc;
-  --container-large-bg: #eeeeee;
-  --form-field-bg-default: #f2f2f2; /*rating bg*/
-  --form-field-bg-hover: #ebebeb;
-  --form-field-controles-default: #a9a9a9; /*calendar.svg*/
-  --border: #e5e5e5;
-  --checkbox-blocked: #6a6a6a;
-  --filter-button-inner-bg: #ababab;
-  --sort-by-default: rgba(0, 0, 0, 0.3);
-  --dir-button-bg-default: #cacaca;
-  --rating-color: #666666;
+  --lighter-grey: #eeeeee;
+  --basic-brown: #766357;
 }
 
 /*Global*/
@@ -70,14 +55,14 @@
 .content-image {
   max-width: 100%;
   height: auto;
-  background-color: var(--container-large-bg);
+  background-color: var(--lighter-grey);
 }
 
 .button {
   font: inherit;
   font-weight: bold;
   text-align: center;
-  color:var(--basic-white);
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
@@ -94,7 +79,7 @@
 }
 
 .header__nav-link_active {
-  color: var(--brown-button-bg-default);
+  color: var(--basic-brown);
 }
 
 .header__nav-link:hover {
@@ -108,7 +93,7 @@
 /*Welcome*/
 
 .welcome {
-  background-color: var(--container-large-bg);
+  background-color: var(--lighter-grey);
 }
 
 /*Features*/
@@ -148,7 +133,7 @@
 }
 
 .features__item_bg_grey {
-  background-color: var(--container-large-bg);
+  background-color: var(--lighter-grey);
 }
 
 /*Interested*/
@@ -166,16 +151,16 @@
 .interested__button {
   font-size: 21px;
   line-height: 26px;
-  background-color: var(--brown-button-bg-default);
+  background-color: var(--basic-brown);
 }
 
 .interested__button:hover {
-  background-color: var(--brown-button-bg-hover);
+  background-color: #604E43;
 }
 
 .interested__button:active {
-  background-color: var(--brown-button-bg-active);
-  color: var(--button-active);
+  background-color: #503E33;
+  color: var(--semitransparent-white);
 }
 
 /*Footer*/
@@ -187,13 +172,14 @@
   text-align: center;
 }
 
-.footer__contacts {
+.footer__column_content_contacts {
   font-size: 21px;
   font-weight: bold;
 }
 
-/*.footer__social {}
-.footer__copyright {}*/
+/*.footer__column
+.footer__column_content_social {}
+.footer__column_content_copyright {}*/
 
 .phone {
     color: inherit;
@@ -210,12 +196,12 @@
 }
 
 .social-button:hover {
-  background-color: var(--blue-button-bg-hover);
+  background-color: #669EC0;
 }
 
 .social-button:active {
-  background-color: var(--blue-button-bg-active);
-  color: var(--button-active);
+  background-color: #5496BD;
+  color: var(--semitransparent-white);
 }
 
 /*Modal*/
@@ -231,10 +217,14 @@
 .search-form__field {
   font: inherit;
   text-transform: uppercase;
-  color: var(--basic-black); /*почему placeholder не наследует? input type="date"*/
-  background-color: var(--form-field-bg-default);
+  color: var(--basic-black);
+  background-color: #f2f2f2;
   border: none;
   padding: 6px 0;
+}
+
+.search-form__field::placeholder {
+  color: var(--basic-black);
 }
 
 .search-form__field_date {
@@ -246,7 +236,7 @@
 }
 
 .search-form__field:hover {
-  background-color: var(--form-field-bg-hover);
+  background-color: #ebebeb;
 }
 
 .search-form__field:focus {
@@ -259,12 +249,12 @@
 }
 
 .search-form__button:hover {
-  background-color: var(--blue-button-bg-hover);
+  background-color: #669EC0;
 }
 
 .search-form__button:active {
-  background-color: var(--blue-button-bg-active);
-  color: var(--button-active);
+  background-color: #5496BD;
+  color: var(--semitransparent-white);
 }
 
 /*CATALOG.html*/
@@ -309,7 +299,7 @@
 }
 
 .sort-by {
-  color: var(--sort-by-default);
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted var(--basic-blue);
 }
 
@@ -335,30 +325,30 @@
 }
 
 .hotel-card__button_more:hover {
-  background-color: var(--blue-button-bg-hover);
+  background-color: #669EC0;
 }
 
 .hotel-card__button_more:active {
-  background-color: var(--blue-button-bg-active);
-  color: var(--button-active);
+  background-color: #5496BD;
+  color: var(--semitransparent-white);
 }
 
 .hotel-card__button_reserve {
-  background-color: var(--brown-button-bg-default);
+  background-color: var(--basic-brown);
 }
 
 .hotel-card__button_reserve:hover {
-  background-color: var(--brown-button-bg-hover);
+  background-color: #604E43;
 }
 
 .hotel-card__button_reserve:active {
-  background-color: var(--brown-button-bg-active);
-  color: var(--button-active);
+  background-color: #503E33;
+  color: var(--semitransparent-white);
 }
 
 .hotel-card__rating {
-  color: var(--rating-color);
-  background-color: var(--form-field-bg-default);
+  color: #666666;
+  background-color: #f2f2f2;
   text-align: center;
   vertical-align: middle;
 }

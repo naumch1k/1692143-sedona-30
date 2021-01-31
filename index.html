@@ -93,37 +93,33 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="footer__contacts">
-        <h2>Связаться</h2> <!--hidden-->
-        <p>
-          <a class="link" href="blank.html">#visitsedona</a><br>
-          тел: <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+      <div class="footer__columns">
+        <section class="footer__column footer__column_content_contacts">
+          <h2>Связаться</h2> <!--hidden-->
+          <p>
+            <a class="link" href="blank.html">#visitsedona</a><br>
+            тел: <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+          </p>
+        </section>
+        <section class="footer__column footer__column_content_social">
+          <h2>Соцсети</h2> <!--hidden-->
+          <ul class="list social-buttons">
+            <li><a class="link social-button" href="#">Twitter</a></li> <!--Реализация: background-image для ссылки. Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden.-->
+            <li><a  class="link social-button" href="#">Facebook</a></li>
+            <li><a  class="link social-button" href="#">Youtube</a></li>
+          </ul>
+        </section>
+        <p class="footer__column footer__column_content_copyright">
+          website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
         </p>
-      </section>
-      <section class="footer__social">
-        <h2>Соцсети</h2> <!--hidden-->
-        <ul class="list social-buttons">
-          <li>
-            <a class="link social-button" href="#">Twitter</a> <!--Реализация: background-image для ссылки. Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden.-->
-          </li>
-          <li>
-            <a  class="link social-button" href="#">Facebook</a>
-          </li>
-          <li>
-            <a  class="link social-button" href="#">Youtube</a>
-          </li>
-        </ul>
-      </section>
-      <p class="footer__copyright">
-        website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
-      </p>
+      </div>
     </footer>
     <section class="modal">
       <h2>Поиск гостиницы в Седоне</h2> <!--hidden-->
       <form class="search-form" action="#" method="get">
         <label for="date-move-in">Дата заезда:</label>
-        <input class="search-form__field search-form__field_date" id="date-move-in" placeholder="24 апреля 2017">
+        <input class="search-form__field search-form__field_date" id="date-move-in" placeholder="24 апреля 2017"><!--input type="date"-->
         <label for="date-move-out">Дата выезда:</label>
         <input class="search-form__field search-form__field_date" id="date-move-out" placeholder="4 июля 2017">
         <label for="adults">Взрослые:</label>
