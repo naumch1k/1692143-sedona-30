@@ -1,0 +1,364 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+      url("../fonts/PTSans-Bold.woff") format("woff");
+      font-weight: 700;
+      font-style: normal;
+}
+
+/* Variables*/
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-blue: #81b3d2;
+  --basic-grey: #333333;
+  --brown-button-bg-default: #766357;
+  --brown-button-bg-hover: #604E43;
+  --brown-button-bg-active: #503E33;
+  --blue-button-bg-hover: #669EC0;
+  --blue-button-bg-active: #5496BD;
+  --button-active: rgba(255, 255, 255, 0.3);
+  --htmlacademy-logo-default: #231f20;
+  --htmlacademy-logo-active: #bdbbbc;
+  --container-large-bg: #eeeeee;
+  --form-field-bg-default: #f2f2f2; /*rating bg*/
+  --form-field-bg-hover: #ebebeb;
+  --form-field-controles-default: #a9a9a9; /*calendar.svg*/
+  --border: #e5e5e5;
+  --checkbox-blocked: #6a6a6a;
+  --filter-button-inner-bg: #ababab;
+  --sort-by-default: rgba(0, 0, 0, 0.3);
+  --dir-button-bg-default: #cacaca;
+  --rating-color: #666666;
+}
+
+/*Global*/
+
+.page {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-grey);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.link {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+  background-color: var(--container-large-bg);
+}
+
+.button {
+  font: inherit;
+  font-weight: bold;
+  text-align: center;
+  color:var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+/*Header*/
+
+/*.header {}*/
+
+.header__site-navigation {
+  line-height: 26px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.header__nav-link_active {
+  color: var(--brown-button-bg-default);
+}
+
+.header__nav-link:hover {
+  color: var(--basic-blue);
+}
+
+.header__nav-link:active {
+  opacity: 0.3;
+}
+
+/*Welcome*/
+
+.welcome {
+  background-color: var(--container-large-bg);
+}
+
+/*Features*/
+
+.features {
+  text-align: center;
+}
+
+.features__desc {
+  line-height: 26px;
+}
+
+.features__desc-title {
+  color: var(--basic-black);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/*оставила для структуры; если не понадобятся удалю здесь и в html*/
+/*.features__list {}*/
+/*.features__sublist {}*/
+/*.features__item {}*/
+
+.features__item-title {
+  color: var(--basic-black);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.item-title_container-small {
+  color: var(--basic-white);
+}
+
+.features__container_small {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.features__item_bg_grey {
+  background-color: var(--container-large-bg);
+}
+
+/*Interested*/
+
+.interested {
+  text-align: center;
+  line-height: 24px;
+}
+
+.interested__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.interested__button {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--brown-button-bg-default);
+}
+
+.interested__button:hover {
+  background-color: var(--brown-button-bg-hover);
+}
+
+.interested__button:active {
+  background-color: var(--brown-button-bg-active);
+  color: var(--button-active);
+}
+
+/*Footer*/
+
+.footer {
+  color: var(--basic-black);
+  background-color: rgba(255, 255, 255, 0.9);
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer__contacts {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/*.footer__social {}
+.footer__copyright {}*/
+
+.phone {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-buttons {
+  font: inherit;
+}
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover {
+  background-color: var(--blue-button-bg-hover);
+}
+
+.social-button:active {
+  background-color: var(--blue-button-bg-active);
+  color: var(--button-active);
+}
+
+/*Modal*/
+
+.modal {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  line-height: 26px;
+  font-weight: 700;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.search-form__field {
+  font: inherit;
+  text-transform: uppercase;
+  color: var(--basic-black); /*почему placeholder не наследует? input type="date"*/
+  background-color: var(--form-field-bg-default);
+  border: none;
+  padding: 6px 0;
+}
+
+.search-form__field_date {
+  padding-left: 12px;
+}
+
+.search-form__field_guest {
+  text-align: center;
+}
+
+.search-form__field:hover {
+  background-color: var(--form-field-bg-hover);
+}
+
+.search-form__field:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--border);
+}
+
+.search-form__button {
+  background-color: var(--basic-blue);
+}
+
+.search-form__button:hover {
+  background-color: var(--blue-button-bg-hover);
+}
+
+.search-form__button:active {
+  background-color: var(--blue-button-bg-active);
+  color: var(--button-active);
+}
+
+/*CATALOG.html*/
+
+/*Filter*/
+
+.filter {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.filter__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter__button {
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+}
+
+.filter__button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/*От и До text-align: center;*/
+
+/*Sort*/
+
+.result__sort {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sort-by {
+  color: var(--sort-by-default);
+  border-bottom: 1px dotted var(--basic-blue);
+}
+
+.sort-by:hover {
+  color: var(--basic-blue);
+}
+
+.sort-by:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+/*Hotel-card*/
+
+.hotel-card__title {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-card__button_more {
+  background-color: var(--basic-blue);
+}
+
+.hotel-card__button_more:hover {
+  background-color: var(--blue-button-bg-hover);
+}
+
+.hotel-card__button_more:active {
+  background-color: var(--blue-button-bg-active);
+  color: var(--button-active);
+}
+
+.hotel-card__button_reserve {
+  background-color: var(--brown-button-bg-default);
+}
+
+.hotel-card__button_reserve:hover {
+  background-color: var(--brown-button-bg-hover);
+}
+
+.hotel-card__button_reserve:active {
+  background-color: var(--brown-button-bg-active);
+  color: var(--button-active);
+}
+
+.hotel-card__rating {
+  color: var(--rating-color);
+  background-color: var(--form-field-bg-default);
+  text-align: center;
+  vertical-align: middle;
+}

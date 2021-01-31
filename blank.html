@@ -3,59 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-
-  <body>
-
-    <header>
-      <nav>
-        <a href="index.html">
+  <body class="page">
+    <header class="header">
+      <nav class="navigation">
+        <a class="header__logo" href="index.html">
           <img src="img/logo.svg"  width="138" height="70" alt="Логотип City of Sedona">
         </a>
-        <ul>
-          <li><a>Информация</a></li> <!--3.3. Главное меню: пункт «Информация» не является ссылкой на главную страницу.-->
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+        <ul class="header__site-navigation">
+          <li><a class="link header__nav-link" href="blank.html">Информация</a></li> <!--3.3. Главное меню: пункт «Информация» не является ссылкой на главную страницу.-->
+          <li><a class="link header__nav-link" href="blank.html">Фото и видео</a></li>
+          <li><a class="link header__nav-link" href="blank.html">Карта штата</a></li>
+          <li><a class="link header__nav-link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-
-    <main>
+    <main class="main">
       <h1>Скоро-скоро тут много чего появится!</h1>
     </main>
-    
-    <footer>
-      <section>
-        <h2>связаться</h2> <!--hidden-->
+    <footer class="footer">
+      <section class="footer__contacts">
+        <h2>Связаться</h2> <!--hidden-->
         <p>
-          <a href="blank.html">#visitsedona</a><br>
-          тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+          <a class="link" href="blank.html">#visitsedona</a><br>
+          тел: <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
         </p>
       </section>
-      <section>
-        <h2>соцсети</h2> <!--hidden-->
-        <ul>
+      <section class="footer__social">
+        <h2>Соцсети</h2> <!--hidden-->
+        <ul class="list social-buttons">
           <li>
-            <a href="#">Twitter</a> <!--Реализация: background-image для ссылки. Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden.-->
+            <a class="link social-button" href="#">Twitter</a> <!--Реализация: background-image для ссылки. Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden.-->
           </li>
           <li>
-            <a href="#">Facebook</a> 
+            <a  class="link social-button" href="#">Facebook</a>
           </li>
           <li>
-            <a href="#">Youtube</a>
+            <a  class="link social-button" href="#">Youtube</a>
           </li>
         </ul>
       </section>
-      <p>
+      <p class="footer__copyright">
         website by
-        <a href=https://htmlacademy.ru/intensive/htmlcss target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
       </p>
     </footer>
-
   </body>
 </html>
