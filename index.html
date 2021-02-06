@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page">
+  <body class="page-body">
     <header class="header">
       <nav class="navigation">
         <a class="header__logo">
@@ -25,24 +25,27 @@
       </nav>
     </header>
     <main class="main">
-      <h1>Седона</h1> <!--hidden-->
+      <h1 class="hidden">Седона</h1> <!--hidden-->
       <section class="welcome">
-        <h2>Добро пожаловать в Седону</h2> <!--hidden-->
+        <h2 class="hidden">Добро пожаловать в Седону</h2> <!--hidden-->
         <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон отстой!">
       </section>
+
       <section class="features">
-        <h2>Преимущества</h2> <!--hidden-->
+        <h2 class="hidden">Преимущества</h2> <!--hidden-->
         <div class="features__desc">
           <p class="features__desc-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <ol class="features__list">
-          <li class="features__item">
-            <div class="features__container_small">
-              <h3 class="features__item-title item-title_container-small">настоящий городок</h3>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <li>
+            <div class="features__grid-container">
+              <div class="features__item features__item_theme_bright">
+                <h3 class="features__item-title features__item-title_theme_bright">настоящий городок</h3>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img class="content-image" src="img/true_village.jpg" width="800" height="256" alt="Кусты, американский флаг, красивое здание">
             </div>
-            <img class="content-image" src="img/true_village.jpg" width="800" height="256" alt="Кусты, американский флаг, красивое здание">
             <ul class="list features__sublist">
               <li class="features__item">
                 <!--Тут и ниже вспомогательные иконки. Реализация: background-image для всего блока или для псевдоэлемента-->
@@ -59,34 +62,39 @@
               </li>
             </ul>
           </li>
-          <li class="features__item">
+          <li class="features__grid-container">
             <img class="content-image" src="img/devils_bridge.jpg" width="800" height="256" alt="Мост Дьявола в Седоне">
-            <div class="features__container_small">
-              <h3 class="features__item-title item-title_container-small">там есть Мост дьявола</h3>
+            <div  class="features__item features__item_theme_bright">
+              <h3 class="features__item-title features__item-title_theme_bright">там есть Мост дьявола</h3>
               <p>да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-          </li> <!--валидатор не дал обернуть #3-5 в div. Пока так.-->
-            <li class="features__item features__item_bg_grey">
+          </li>
+          <!--Валидатор выдает ошибку: Element div not allowed as child of element ol in this context.-->
+          <!--Еще делала через display:inline-block для трех последних элементов. Убирала отступ - font-size:0 родителю. Пока не знаю, как быть-->
+          <div class="features__grid-container">
+          <li class="features__item features__item_theme_grey">
               <h3 class="features__item-title">небольшая площадь</h3>
                <p>все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="features__item features__item_bg_grey">
-              <h3 class="features__item-title">красивая дорога</h3>
-              <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-            </li>
-            <li class="features__item features__item_bg_grey">
-              <h3 class="features__item-title">мало туристов</h3>
-              <p>большинство едет в гранд каньон и толпится там</p>
-            </li>
+          </li>
+          <li class="features__item features__item_theme_grey">
+            <h3 class="features__item-title">красивая дорога</h3>
+            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="features__item features__item_theme_grey">
+            <h3 class="features__item-title">мало туристов</h3>
+            <p>большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </div>
         </ol>
       </section>
+
       <section class="interested">
         <h2 class="interested__title">заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button interested__button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="map">
-        <h2>Интерактивная карта</h2> <!--hidden-->
+        <h2 class="hidden">Интерактивная карта</h2> <!--hidden-->
         <img class="content-image" src="img/map.png" width="1199" height="594" alt="Карта">
         <!--3.13. Блок карты: достаточная реализация — обычное изображение.-->
         <!--4.3. Блок карты: интерактивная карта, которая тянется на всю ширину контейнера. Реализация по желанию.-->
@@ -116,15 +124,15 @@
       </div>
     </footer>
     <section class="modal">
-      <h2>Поиск гостиницы в Седоне</h2> <!--hidden-->
+      <h2 class="hidden">Поиск гостиницы в Седоне</h2> <!--hidden-->
       <form class="search-form" action="#" method="get">
-        <label for="date-move-in">Дата заезда:</label>
+        <label class="search-form__label" for="date-move-in">Дата заезда:</label>
         <input class="search-form__field search-form__field_date" id="date-move-in" placeholder="24 апреля 2017"><!--input type="date"-->
-        <label for="date-move-out">Дата выезда:</label>
+        <label class="search-form__label" for="date-move-out">Дата выезда:</label>
         <input class="search-form__field search-form__field_date" id="date-move-out" placeholder="4 июля 2017">
-        <label for="adults">Взрослые:</label>
+        <label class="search-form__label" for="adults">Взрослые:</label>
         <input class="search-form__field search-form__field_guest" type="number" min="0" id="adults" placeholder="2">
-        <label for="children">Дети:</label>
+        <label class="search-form__label" for="children">Дети:</label>
         <input class="search-form__field search-form__field_guest" type="number" min="0" id="children" placeholder="0">
         <button class="button search-form__button" type="submit">Найти</button>
       </form>

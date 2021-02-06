@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page">
+  <body class="page-body">
     <header class="header">
       <nav class="navigation">
         <a class="header__logo" href="index.html">
@@ -24,12 +24,13 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <h1>Каталог гостиниц</h1> <!--hidden-->
+    <main>
+      <h1 class="hidden">Каталог гостиниц</h1> <!--hidden-->
       <section class="filter">
-        <h2>Фильтр гостиниц</h2> <!--hidden-->
-        <form method="get" action="https://echo.htmlacademy.ru/">
-          <fieldset>
+        <h2 class="hidden">Фильтр гостиниц</h2> <!--hidden-->
+        <form class="filter__form" method="get" action="https://echo.htmlacademy.ru/">
+          <div class="filter__grid-container">
+            <fieldset>
             <legend class="filter__title">Инфраструктура:</legend>
             <ul class="list">
               <li>
@@ -45,8 +46,8 @@
                 <label for="wifi">WI-FI</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
+            </fieldset>
+            <fieldset>
             <legend class="filter__title">Тип жилья:</legend>
             <ul class="list">
               <li>
@@ -62,7 +63,8 @@
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset>
             <legend class="filter__title">Стоимость в сутки (Р):</legend>
             <label for="min">От</label><!--сделаем лэйблом для output-->
@@ -76,22 +78,22 @@
         </form>
       </section>
       <section class="result">
-        <h2>Список гостиниц</h2> <!--hidden-->
-        <div class="result__sort">
-          <p class="found">Найдено: 3</p>
-          <p>Сортировка:</p>
-          <ul class="list">
-            <li class="sort-by">По цене</li>
-            <li class="sort-by">По типу</li>
-            <li class="sort-by">По рейтингу</li>
+        <h2 class="hidden">Список гостиниц</h2> <!--hidden-->
+        <div class="sort">
+          <p class="sort__found">Найдено: 3</p>
+          <p class="sort-by__title">Сортировка:</p>
+          <ul class="list sort-by__list">
+            <li class="sort-by__item">По цене</li>
+            <li class="sort-by__item">По типу</li>
+            <li class="sort-by__item">По рейтингу</li>
           </ul>
-          <ul class="result__controls">
-            <li class="list">
+          <ul class="list sort-by__controls">
+            <li>
               <!--наверное все-таки фоновая. просто играюсь.-->
-              <svg class="result-control" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
+              <svg class="sort-by__control" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
             </li>
-            <li class="list">
-              <svg class="result-control" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
+            <li>
+              <svg class="sort-by__control" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
             </li>
           </ul>
         </div>
@@ -147,17 +149,18 @@
         </ul>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer__columns">
         <section class="footer__column footer__column_content_contacts">
-          <h2>Связаться</h2> <!--hidden-->
+          <h2 class="hidden">Связаться</h2> <!--hidden-->
           <p>
             <a class="link" href="blank.html">#visitsedona</a><br>
             тел: <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
           </p>
         </section>
         <section class="footer__column footer__column_content_social">
-          <h2>Соцсети</h2> <!--hidden-->
+          <h2 class="hidden">Соцсети</h2> <!--hidden-->
           <ul class="list social-buttons">
             <li><a class="link social-button" href="#">Twitter</a></li> <!--Реализация: background-image для ссылки. Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden.-->
             <li><a  class="link social-button" href="#">Facebook</a></li>
@@ -170,5 +173,6 @@
         </p>
       </div>
     </footer>
+
   </body>
 </html>
