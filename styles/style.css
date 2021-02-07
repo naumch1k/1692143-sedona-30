@@ -25,6 +25,7 @@
   --semitransparent-black: rgba(0, 0, 0, 0.3);
   --basic-blue: #81b3d2;
   --basic-grey: #333333;
+  --light-grey: #bdbbbc;
   --ligther-grey: #e5e5e5;
   --pale-grey: #eeeeee;
   --smoky-grey: #f2f2f2;
@@ -428,12 +429,29 @@
   border-bottom: none;
 }
 
+.sort-by__item_active {
+  color: var(--basic-blue);
+  border-bottom: none;
+}
+
 .sort-by__controls {
   margin: auto 0;
   display: grid;
   grid-template-columns: min-content min-content;
   column-gap: 10px;
   justify-self: end;
+}
+
+.sort-by__control:hover path {
+  fill: var(--basic-black);
+}
+
+.sort-by__control:active path {
+  fill: var(--basic-blue);
+}
+
+.sort-by__control_active path {
+  fill: var(--basic-blue);
 }
 
 /*Hotel-cards*/
@@ -457,6 +475,14 @@
   color: var(--basic-black);
   font-size: 21px;
   line-height: 26px;
+}
+
+.hotel-card__title:hover {
+  --basic-black: var(--basic-blue);
+}
+
+.hotel-card__title:active {
+  --basic-black: var(--semitransparent-black);
 }
 
 .hotel-card__button_more {

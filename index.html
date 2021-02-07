@@ -37,7 +37,7 @@
           <p class="features__desc-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <ol class="features__list">
+        <ol class="features__list" style="display: flex;flex-wrap: wrap;">
           <li>
             <div class="features__grid-container">
               <div class="features__item features__item_theme_bright">
@@ -69,9 +69,6 @@
               <p>да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
-          <!--Валидатор выдает ошибку: Element div not allowed as child of element ol in this context.-->
-          <!--Еще делала через display:inline-block для трех последних элементов. Убирала отступ - font-size:0 родителю. Пока не знаю, как быть-->
-          <div class="features__grid-container">
           <li class="features__item features__item_theme_grey">
               <h3 class="features__item-title">небольшая площадь</h3>
                <p>все достопримечательности находятся очень близко</p>
@@ -84,7 +81,6 @@
             <h3 class="features__item-title">мало туристов</h3>
             <p>большинство едет в гранд каньон и толпится там</p>
           </li>
-        </div>
         </ol>
       </section>
 
