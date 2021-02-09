@@ -30,35 +30,33 @@
         <h2 class="hidden">Добро пожаловать в Седону</h2> <!--hidden-->
         <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон отстой!">
       </section>
-
       <section class="features">
         <h2 class="hidden">Преимущества</h2> <!--hidden-->
         <div class="features__desc">
-          <p class="features__desc-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+          <p class="features__desc-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <ol class="features__list" style="display: flex;flex-wrap: wrap;">
+        <ol class="features__list">
           <li>
             <div class="features__grid-container">
               <div class="features__item features__item_theme_bright">
                 <h3 class="features__item-title features__item-title_theme_bright">настоящий городок</h3>
-                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="features__item-desc">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="content-image" src="img/true_village.jpg" width="800" height="256" alt="Кусты, американский флаг, красивое здание">
             </div>
             <ul class="list features__sublist">
               <li class="features__item">
-                <!--Тут и ниже вспомогательные иконки. Реализация: background-image для всего блока или для псевдоэлемента-->
                 <h3 class="features__item-title">жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="features__item-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="features__item">
                 <h3 class="features__item-title">еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="features__item-desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="features__item">
                 <h3 class="features__item-title">сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
+                <p class="features__item-desc">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
@@ -66,27 +64,26 @@
             <img class="content-image" src="img/devils_bridge.jpg" width="800" height="256" alt="Мост Дьявола в Седоне">
             <div  class="features__item features__item_theme_bright">
               <h3 class="features__item-title features__item-title_theme_bright">там есть Мост дьявола</h3>
-              <p>да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p class="features__item-desc">да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
           <li class="features__item features__item_theme_grey">
               <h3 class="features__item-title">небольшая площадь</h3>
-               <p>все достопримечательности находятся очень близко</p>
+               <p class="features__item-desc">все достопримечательности находятся&nbsp;очень близко</p>
           </li>
           <li class="features__item features__item_theme_grey">
             <h3 class="features__item-title">красивая дорога</h3>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="features__item-desc">ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
           </li>
           <li class="features__item features__item_theme_grey">
             <h3 class="features__item-title">мало туристов</h3>
-            <p>большинство едет в гранд каньон и толпится там</p>
+            <p class="features__item-desc">большинство едет в гранд каньон и&nbsp;толпится там</p>
           </li>
         </ol>
       </section>
-
       <section class="interested">
         <h2 class="interested__title">заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="interested__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
         <button class="button interested__button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="map">
@@ -99,14 +96,14 @@
     <footer class="footer">
       <div class="footer__columns">
         <section class="footer__column footer__column_content_contacts">
-          <h2>Связаться</h2> <!--hidden-->
-          <p>
+          <h2 class="hidden">Связаться</h2><!--hidden-->
+          <p class="footer__paragraph">
             <a class="link" href="blank.html">#visitsedona</a><br>
             тел: <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
           </p>
         </section>
         <section class="footer__column footer__column_content_social">
-          <h2>Соцсети</h2> <!--hidden-->
+          <h2 class="hidden">Соцсети</h2><!--hidden-->
           <ul class="list social-buttons">
             <li><a class="link social-button" href="#">Twitter</a></li> <!--Реализация: background-image для ссылки. Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden.-->
             <li><a  class="link social-button" href="#">Facebook</a></li>

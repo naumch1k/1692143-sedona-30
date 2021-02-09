@@ -30,72 +30,76 @@
         <h2 class="hidden">Фильтр гостиниц</h2> <!--hidden-->
         <form class="filter__form" method="get" action="https://echo.htmlacademy.ru/">
           <div class="filter__grid-container">
-            <fieldset>
-            <legend class="filter__title">Инфраструктура:</legend>
-            <ul class="list">
-              <li>
-                <input class="filter__checkbox" type="checkbox" name="features" value="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
-              </li>
-              <li>
-                <input class="filter__checkbox" type="checkbox" name="features" value="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li>
-                <input class="filter__checkbox" type="checkbox" name="features" value="wifi" id="wifi">
-                <label for="wifi">WI-FI</label>
-              </li>
-            </ul>
+            <fieldset class="fieldset">
+              <legend class="fieldset__title">Инфраструктура:</legend>
+              <ul class="list">
+                <li class="fieldset__option">
+                  <input class="fieldset__checkbox" type="checkbox" name="features" value="pool" id="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li class="fieldset__option">
+                  <input class="fieldset__checkbox" type="checkbox" name="features" value="parking" id="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li class="fieldset__option">
+                  <input class="fieldset__checkbox" type="checkbox" name="features" value="wifi" id="wifi">
+                  <label for="wifi">WI-FI</label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset>
-            <legend class="filter__title">Тип жилья:</legend>
-            <ul class="list">
-              <li>
-                <input class="filter__checkbox" type="checkbox" name="type" value="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </li>
-              <li>
-                <input class="filter__checkbox" type="checkbox" name="type" value="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
-              </li>
-              <li>
-                <input class="filter__checkbox" type="checkbox" name="type" value="apartments" id="apartments" checked>
-                <label for="apartments">Апартаменты</label>
-              </li>
-            </ul>
+            <fieldset class="fieldset">
+              <legend class="fieldset__title">Тип жилья:</legend>
+              <ul class="list">
+                <li class="fieldset__option">
+                  <input class="fieldset__checkbox" type="checkbox" name="type" value="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="fieldset__option">
+                  <input class="fieldset__checkbox" type="checkbox" name="type" value="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li class="fieldset__option">
+                  <input class="fieldset__checkbox" type="checkbox" name="type" value="apartments" id="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
             </fieldset>
           </div>
-          <fieldset>
-            <legend class="filter__title">Стоимость в сутки (Р):</legend>
-            <label for="min">От</label><!--сделаем лэйблом для output-->
-            <input type="range" name="price" value="0" min="0" max="4000" step="100" id="min">
-            <output for="min"></output>
-            <label for="max">До</label>
-            <input type="range" name="price" value="3000" min="0" max="4000" step="100" id="max">
-            <output for="max"></output>
-          </fieldset>
-          <button class="button filter__button" type="submit">Показать</button>
+          <div class="filter__flex-container">
+            <fieldset class="fieldset fieldset_price">
+              <legend class="fieldset__title">Стоимость в сутки (Р):</legend>
+              <label for="min">От</label><!--сделаем лэйблом для output-->
+              <input type="range" name="price" value="0" min="0" max="4000" step="100" id="min">
+              <output for="min"></output>
+              <label for="max">До</label>
+              <input type="range" name="price" value="3000" min="0" max="4000" step="100" id="max">
+              <output for="max"></output>
+            </fieldset>
+            <button class="button filter__button" type="submit">Показать</button>
+          </div>
         </form>
       </section>
       <section class="result">
         <h2 class="hidden">Список гостиниц</h2> <!--hidden-->
         <div class="sort">
-          <p class="sort__found">Найдено: 3</p>
-          <p class="sort-by__title">Сортировка:</p>
-          <ul class="list sort-by__list">
-            <li class="sort-by__item_active"><a>По цене</a></li>
-            <li class="sort-by__item"><a>По типу</a></li>
-            <li class="sort-by__item"><a>По рейтингу</a></li>
-          </ul>
+          <div class="sort__grid-container">
+            <p class="sort__found">Найдено: 3</p>
+            <p class="sort-by__title">Сортировка:</p>
+            <ul class="list sort-by__list">
+              <li class="sort-by__item sort-by__item_active"><a>По цене</a></li>
+              <li class="sort-by__item"><a>По типу</a></li>
+              <li class="sort-by__item"><a>По рейтингу</a></li>
+            </ul>
+          </div>
           <ul class="list sort-by__controls">
             <li>
               <a href="#">
-                <svg class="sort-by__control" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
+                <svg class="sort-by__control" width="11" height="10" fill="currentColor"><path d="M5.5 0L0 10h11L5.5 0z"/></svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="sort-by__control_active" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
+                <svg class="sort-by__control_active" width="11" height="10" fill="currentColor"><path d="M5.5 10L11 0H0l5.5 10z"/></svg>
               </a>
             </li>
           </ul>
@@ -107,10 +111,12 @@
             </div>
             <div class="hotel-card__column hotel-card__column_content_info">
               <h3 class="hotel-card__title"><a>Amara Resort &AMP; Spa</a></h3>
-              <p>Гостиница</p>
-              <p>От 4000 Р.</p>
-              <button class="button hotel-card__button_more" type="button">Подробнее</button>
-              <button class="button hotel-card__button_reserve" type="button">Забронировать</button>
+              <div class="hotel-card__grid-container">
+                <p class="hotel-card__paragraph">Гостиница</p>
+                <p class="hotel-card__paragraph">От 4000 Р.</p>
+                <button class="button hotel-card__button_more" type="button">Подробнее</button>
+                <button class="button hotel-card__button_reserve" type="button">Забронировать</button>
+              </div>
             </div>
             <div class="hotel-card__column hotel-card__column_content_rating">
               <img src="img/4star.svg" width="91" height="17" alt="Четыре звезды">
@@ -123,10 +129,12 @@
             </div>
             <div class="hotel-card__column hotel-card__column_content_info">
               <h3 class="hotel-card__title"><a>Desert Quail Inn</a></h3>
-              <p>Мотель</p>
-              <p>От 3000 Р.</p>
-              <button class="button hotel-card__button_more" type="button">Подробнее</button>
-              <button class="button hotel-card__button_reserve" type="button">Забронировать</button>
+              <div class="hotel-card__grid-container">
+                <p class="hotel-card__paragraph">Мотель</p>
+                <p class="hotel-card__paragraph">От 3000 Р.</p>
+                <button class="button hotel-card__button_more" type="button">Подробнее</button>
+                <button class="button hotel-card__button_reserve" type="button">Забронировать</button>
+              </div>
             </div>
             <div class="hotel-card__column hotel-card__column_content_rating">
               <img src="img/3star.svg" width="66" height="17" alt="Три звезды">
@@ -139,10 +147,12 @@
             </div>
             <div class="hotel-card__column hotel-card__column_content_info">
               <h3 class="hotel-card__title"><a>Villas at Poco Diablo</a></h3>
-              <p>Апартаменты</p>
-              <p>От 2000 Р.</p>
-              <button class="button hotel-card__button_more" type="button">Подробнее</button>
-              <button class="button hotel-card__button_reserve" type="button">Забронировать</button>
+              <div class="hotel-card__grid-container">
+                <p class="hotel-card__paragraph">Апартаменты</p>
+                <p class="hotel-card__paragraph">От 2000 Р.</p>
+                <button class="button hotel-card__button_more" type="button">Подробнее</button>
+                <button class="button hotel-card__button_reserve" type="button">Забронировать</button>
+              </div>
             </div>
             <div class="hotel-card__column hotel-card__column_content_rating">
               <img src="img/2star.svg" width="42" height="17" alt="Две звезды">
@@ -152,12 +162,11 @@
         </ul>
       </section>
     </main>
-
     <footer class="footer">
       <div class="footer__columns">
         <section class="footer__column footer__column_content_contacts">
           <h2 class="hidden">Связаться</h2> <!--hidden-->
-          <p>
+          <p class="footer__paragraph">
             <a class="link" href="blank.html">#visitsedona</a><br>
             тел: <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
           </p>
@@ -176,6 +185,5 @@
         </p>
       </div>
     </footer>
-
   </body>
 </html>
