@@ -16,7 +16,7 @@
         <a class="header__logo" href="index.html">
           <img src="img/logo.svg"  width="138" height="70" alt="Логотип City of Sedona">
         </a>
-        <ul class="header__site-navigation">
+        <ul class="list header__site-navigation">
           <li><a class="link header__nav-link" href="blank.html">Информация</a></li>
           <li><a class="link header__nav-link" href="blank.html">Фото и видео</a></li>
           <li><a class="link header__nav-link" href="blank.html">Карта штата</a></li>
@@ -34,16 +34,16 @@
               <legend class="fieldset__title">Инфраструктура:</legend>
               <ul class="list">
                 <li class="fieldset__option">
-                  <input class="fieldset__checkbox" type="checkbox" name="features" value="pool" id="pool" checked>
-                  <label for="pool">Бассейн</label>
+                  <input class="visually-hidden fieldset__checkbox" type="checkbox" name="features" value="pool" id="pool" checked>
+                  <label class="fieldset__label" for="pool">Бассейн</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__checkbox" type="checkbox" name="features" value="parking" id="parking">
-                  <label for="parking">Парковка</label>
+                  <input class="visually-hidden fieldset__checkbox" type="checkbox" name="features" value="parking" id="parking">
+                  <label class="fieldset__label" for="parking">Парковка</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__checkbox" type="checkbox" name="features" value="wifi" id="wifi">
-                  <label for="wifi">WI-FI</label>
+                  <input class="visually-hidden fieldset__checkbox" type="checkbox" name="features" value="wifi" id="wifi">
+                  <label class="fieldset__label" for="wifi">WI-FI</label>
                 </li>
               </ul>
             </fieldset>
@@ -51,29 +51,41 @@
               <legend class="fieldset__title">Тип жилья:</legend>
               <ul class="list">
                 <li class="fieldset__option">
-                  <input class="fieldset__checkbox" type="checkbox" name="type" value="hotel" id="hotel" checked>
-                  <label for="hotel">Гостиница</label>
+                  <input class="visually-hidden fieldset__checkbox" type="checkbox" name="type" value="hotel" id="hotel" checked>
+                  <label class="fieldset__label" for="hotel">Гостиница</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__checkbox" type="checkbox" name="type" value="motel" id="motel" checked>
-                  <label for="motel">Мотель</label>
+                  <input class="visually-hidden fieldset__checkbox" type="checkbox" name="type" value="motel" id="motel" checked>
+                  <label class="fieldset__label" for="motel">Мотель</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__checkbox" type="checkbox" name="type" value="apartments" id="apartments" checked>
-                  <label for="apartments">Апартаменты</label>
+                  <input class="visually-hidden fieldset__checkbox" type="checkbox" name="type" value="apartments" id="apartments" checked>
+                  <label class="fieldset__label" for="apartments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
           </div>
           <div class="filter__flex-container">
-            <fieldset class="fieldset fieldset_price">
+            <fieldset class="fieldset fieldset_range">
               <legend class="fieldset__title">Стоимость в сутки (Р):</legend>
-              <label for="min">От</label><!--сделаем лэйблом для output-->
-              <input type="range" name="price" value="0" min="0" max="4000" step="100" id="min">
-              <output for="min"></output>
-              <label for="max">До</label>
-              <input type="range" name="price" value="3000" min="0" max="4000" step="100" id="max">
-              <output for="max"></output>
+              <div>
+                <div class="price-controls">
+                  <label>
+                    от <input class="price-control" type="number" name="min-price" value="0" min="0" max="4000" step="100">
+                  </label>
+                  <div class="price-controls__btwn-line"></div>
+                  <label>
+                    до <input class="price-control" type="number" name="max-price" value="3000" min="0" max="4000" step="100">
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="range-controls__scale">
+                    <div class="range-controls__bar" style="width: 80%;margin-left: 0%;"></div>
+                  </div>
+                  <div class="range-controls__toggle range-controls__toggle_min" style="margin-left: 0%;" tabindex="0"></div>
+                  <div class="range-controls__toggle range-controls__toggle_max" style="margin-left: 80%;" tabindex="0"></div>
+                </div>
+              </div>
             </fieldset>
             <button class="button filter__button" type="submit">Показать</button>
           </div>
