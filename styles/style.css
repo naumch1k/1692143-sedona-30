@@ -333,6 +333,7 @@
     padding: 60px 0 0;
     text-align: center;
     line-height: 24px;
+    position: relative;
   }
 
   .interested__title {
@@ -360,7 +361,7 @@
     background-color: var(--basic-brown);
   }
 
-  .interested__button:hover {
+  .interested__button:hover { 
     --basic-brown: #604E43;
   }
 
@@ -369,181 +370,181 @@
     color: var(--semitransparent-white);
   }
 
+    /*Modal*/
+
+    .modal {
+      margin: 0 auto;
+      padding: 55px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 570px;
+      min-height: 400px;
+      background-color: var(--basic-white);
+      color: var(--basic-black);
+      line-height: 26px;
+      font-weight: 700;
+      -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+              box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      /* display: none; */
+    }
+  
+    .search-form {
+      display: -ms-grid;
+      display: grid;
+      row-gap: 30px;
+    }
+  
+    .modal__grid-container {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 50% 50px 1fr;
+      grid-template-columns: 50% 1fr;
+      gap: 50px;
+      margin: 0 0 25px;
+    }
+  
+    .search-form__label {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  
+    .search-form__field {
+      font: inherit;
+      text-transform: uppercase;
+      color: var(--basic-black);
+      background-color: var(--smoky-grey);
+      border: none;
+      padding: 6px 0;
+    }
+  
+    .search-form__field_date {
+      width: 345px;
+      padding-left: 12px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+  
+    .search-form__field_guest {
+      width: 114px;
+      text-align: center;
+    }
+  
+    .search-form__field_guest::-webkit-inner-spin-button,
+    .search-form__field_guest::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+  
+    .search-form__field_guest {
+      -moz-appearance: textfield;
+    }
+  
+    .search-form__field::-webkit-input-placeholder {
+      color: var(--basic-black);
+    }
+  
+    /* в firefox никак не хочет меня цвет */
+    .search-form__field::-moz-placeholder {
+      color: var(--basic-black);
+    }
+  
+    .search-form__field:-ms-input-placeholder {
+      color: var(--basic-black);
+    }
+  
+    .search-form__field::-ms-input-placeholder {
+      color: var(--basic-black);
+    }
+  
+    .search-form__field::placeholder {
+      color: var(--basic-black);
+    }
+  
+    .search-form__field:hover {
+      --smoky-grey: #ebebeb;
+    }
+  
+    .search-form__field:focus {
+      background-color: var(--basic-white);
+      border: 2px solid var(--ligther-grey);
+    }
+  
+    .search-form__icon {
+      fill: var(--dark-grey);
+    }
+  
+    .search-form__icon:hover {
+      fill: var(--basic-black);
+    }
+  
+    .search-form__icon:active {
+      fill: var(--basic-blue);
+    }
+  
+    .search-form__icon_calendar {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+  
+    .search-form__icon_subtract {
+      position: absolute;
+      right: 87px;
+    }
+  
+    .search-form__icon_add {
+      position: absolute;
+      right: 15px;
+    }
+  
+    .search-form__button {
+      font-size: 21px;
+      line-height: 26px;
+      padding: 16px;
+      background-color: var(--basic-blue);
+    }
+
+    .search-form__button:hover {        
+      --basic-blue: #669EC0;
+    }
+  
+    .search-form__button:active {
+      color: var(--semitransparent-white);
+      --basic-blue: #5496BD;
+    }
+  
+
   /*Map*/
 
   .map {
     width: 1200px;
     height: 594px;
-    position: relative;
   }
 
   .map__iframe {
     border: none;
   }
 
-  /*Modal*/
-
-  .modal {
-    margin: 0 auto;
-    padding: 55px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 570px;
-    min-height: 400px;
-    background-color: var(--basic-white);
-    color: var(--basic-black);
-    line-height: 26px;
-    font-weight: 700;
-    -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-            box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    /* display: none; */
-  }
-
-  .search-form {
-    display: -ms-grid;
-    display: grid;
-    row-gap: 30px;
-  }
-
-  .modal__grid-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50px 1fr;
-    grid-template-columns: 50% 1fr;
-    gap: 50px;
-    margin: 0 0 25px;
-  }
-
-  .search-form__label {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .search-form__field {
-    font: inherit;
-    text-transform: uppercase;
-    color: var(--basic-black);
-    background-color: var(--smoky-grey);
-    border: none;
-    padding: 6px 0;
-  }
-
-  .search-form__field_date {
-    width: 345px;
-    padding-left: 12px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
-  .search-form__field_guest {
-    width: 114px;
-    text-align: center;
-  }
-
-  .search-form__field_guest::-webkit-inner-spin-button,
-  .search-form__field_guest::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
-  }
-
-  .search-form__field_guest {
-    -moz-appearance: textfield;
-  }
-
-  .search-form__field::-webkit-input-placeholder {
-    color: var(--basic-black);
-  }
-
-  /* в firefox никак не хочет меня цвет */
-  .search-form__field::-moz-placeholder {
-    color: var(--basic-black);
-  }
-
-  .search-form__field:-ms-input-placeholder {
-    color: var(--basic-black);
-  }
-
-  .search-form__field::-ms-input-placeholder {
-    color: var(--basic-black);
-  }
-
-  .search-form__field::placeholder {
-    color: var(--basic-black);
-  }
-
-  .search-form__field:hover {
-    --smoky-grey: #ebebeb;
-  }
-
-  .search-form__field:focus {
-    background-color: var(--basic-white);
-    border: 2px solid var(--ligther-grey);
-  }
-
-  .search-form__icon {
-    fill: var(--dark-grey);
-  }
-
-  .search-form__icon:hover {
-    fill: var(--basic-black);
-  }
-
-  .search-form__icon:active {
-    fill: var(--basic-blue);
-  }
-
-  .search-form__icon_calendar {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-
-  .search-form__icon_subtract {
-    position: absolute;
-    right: 87px;
-  }
-
-  .search-form__icon_add {
-    position: absolute;
-    right: 15px;
-  }
-
-  .search-form__button {
-    font-size: 21px;
-    line-height: 26px;
-    padding: 16px;
-    background-color: var(--basic-blue);
-  }
-
-  .search-form__button:hover {
-    --basic-blue: #669EC0;
-  }
-
-  .search-form__button:active {
-    color: var(--semitransparent-white);
-    --basic-blue: #5496BD;
-  }
-
   /*Footer*/
 
   .footer {
     width: 100%;
-    min-height: 100px;
+    min-height: 120px;
     color: var(--basic-black);
     background-color: rgba(255, 255, 255, 0.9);
     /* для rgba(255, 255, 255, 0.9) задавать кастомный цвет?*/
@@ -585,7 +586,7 @@
 
   .footer__link {
     display: block;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     color: var(--basic-black);
     text-decoration: none;
   }
@@ -672,10 +673,17 @@
     background-image: url("../img/bg_image.jpg");
     background-position: bottom;
     background-size: cover;
+    position: relative;
   }
 
-  .filter__blur {
-    /* это как-то так должно быть реализовано, верно? */
+  .filter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(5px);
   }
@@ -732,6 +740,8 @@
     margin-bottom: 25px;
     font-size: 16px;
     font-weight: bold;
+    position: relative;
+
   }
 
   .fieldset__list {
@@ -758,6 +768,11 @@
     height: 23px;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
+  }
+
+  .fieldset__checkbox:focus + .fieldset__label {
+  text-decoration: underline;
+  /* а то совсем не видно фокус*/
   }
 
   .fieldset__checkbox:checked + .fieldset__label::before {
@@ -899,6 +914,7 @@
     background-color: transparent;
     border: 2px solid var(--basic-white);
     border-radius: 2px;
+    z-index: 1;
   }
 
   .filter__button:hover {
@@ -967,6 +983,7 @@
 
   .sort-by__item {
     color: var(--semitransparent-black);
+    text-decoration: none;
     border-bottom: 1px dotted var(--basic-blue);
   }
 
@@ -977,6 +994,7 @@
   .sort-by__item:active {
     color: var(--basic-black);
     border-bottom: none;
+    
   }
 
   .sort-by__item_active {
@@ -1096,6 +1114,11 @@
     line-height: 26px;
   }
 
+  .hotel-card__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
   .hotel-card__title:hover {
     --basic-black: var(--basic-blue);
   }
@@ -1107,7 +1130,10 @@
   .hotel-card__button_more {
     max-width: 200px;
     padding: 3px 16px;
+    color: var(--basic-white);
     background-color: var(--basic-blue);
+    font-weight: bold;
+    text-decoration: none;
   }
 
   .hotel-card__button_more:hover {
