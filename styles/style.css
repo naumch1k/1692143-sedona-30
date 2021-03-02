@@ -171,6 +171,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
+    z-index: 2;
   }
 
   .features__desc {
@@ -330,10 +332,17 @@
 
   .interested {
     margin: 0;
-    padding: 60px 0 0;
     text-align: center;
     line-height: 24px;
     position: relative;
+  }
+
+  .interested-container {
+    padding: 60px 0 0;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: var(--basic-white);
   }
 
   .interested__title {
@@ -388,10 +397,19 @@
       position: absolute;
       top: 100%;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
-      /* display: none; */
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      animation: showup 1.5s ease-in-out;
+      z-index: 1;
+    }
+    
+    .modal_hidden {
+      display: none;
+    }
+
+    .modal_error {
+      animation: shake 0.6s;
     }
   
     .search-form {
@@ -455,11 +473,6 @@
     }
   
     .search-form__field::-webkit-input-placeholder {
-      color: var(--basic-black);
-    }
-  
-    /* в firefox никак не хочет меня цвет */
-    .search-form__field::-moz-placeholder {
       color: var(--basic-black);
     }
   
@@ -527,7 +540,6 @@
       color: var(--semitransparent-white);
       --basic-blue: #5496BD;
     }
-  
 
   /*Map*/
 
@@ -547,7 +559,6 @@
     min-height: 120px;
     color: var(--basic-black);
     background-color: rgba(255, 255, 255, 0.9);
-    /* для rgba(255, 255, 255, 0.9) задавать кастомный цвет?*/
     line-height: 26px;
   }
 
@@ -651,7 +662,7 @@
 
   .htmlacademy-logo {
     color: var(--basic-black);
-    margin-left: 10px; /*не очень хорошо*/
+    margin-left: 10px;
   }
 
   .htmlacademy-logo:hover {
@@ -1176,4 +1187,35 @@
     color: var(--darker-grey);
     background-color: var(--smoky-grey);
     text-align: center;
+  }
+
+  /*Animations*/
+
+  @keyframes showup {
+    0% {
+      transform: translate(-50%, -100%);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translate(-50%);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate(-49%);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate(-51%);
+    }
   }
