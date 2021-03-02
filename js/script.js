@@ -17,11 +17,12 @@ try {
   isStorageSupport = false;
 }
 
-interestedButton.addEventListener("click", function () {
+interestedButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
   if (modal.classList.contains("modal_hidden")) {
     modal.classList.remove('modal_hidden');
-    modal.classList.remove("modal_error");
-    moveIn.focus();
+    modal.classList.remove('modal_error');
+    moveIn.focus({preventScroll:true});
     if (adultsStorage) {
       adults.value = adultsStorage;
     }
