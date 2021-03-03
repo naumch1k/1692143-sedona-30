@@ -9,7 +9,7 @@ const adultsStorage = localStorage.getItem("adults");
 const childrenStorage = localStorage.getItem("children");
 
 let isStorageSupport = true;
-const storage = "";
+let storage = "";
 
 try {
   storage = localStorage.getItem("adults");
