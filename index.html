@@ -12,15 +12,15 @@
 </head>
 <body class="page-body">
   <header class="header">
+    <a class="header__logo">
+      <img src="img/logo.svg" width="138" height="70" alt="Логотип City of Sedona">
+    </a>
     <nav>
-      <a class="header__logo">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип City of Sedona">
-      </a>
-      <ul class="header__site-navigation">
-        <li><a class="header__nav-link" href="blank.html">Информация</a></li>
-        <li><a class="header__nav-link" href="blank.html">Фото и видео</a></li>
-        <li><a class="header__nav-link" href="blank.html">Карта штата</a></li>
-        <li><a class="header__nav-link" href="catalog.html">Гостиницы</a></li>
+      <ul class="header__navigation">
+        <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Информация</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Фото и видео</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Карта штата</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -28,7 +28,7 @@
     <h1 class="visually-hidden">Седона</h1>
     <section class="welcome">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="weclome__svg" src="img/welcome.svg" width="457" height="351"  alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон отстой!">
+      <img class="weclome__svg" src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон отстой!">
     </section>
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -41,48 +41,48 @@
           <div class="features__flex-container">
             <div class="features__item features__item_theme_bright">
               <h3 class="features__item-title features__item-title_theme_bright">настоящий городок</h3>
-              <p class="features__item-desc">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="features__item-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="features__image" src="./img/true_village.jpg" width="800" height="256" alt="Кусты, американский флаг, красивое здание">
+            <img class="features__image" src="./img/true_village.jpg" width="800" alt="Кусты, американский флаг, красивое здание">
           </div>
           <ul class="features__sublist">
             <li class="features__subitem">
-              <h3 class="features__item-title">жильё</h3>
-              <p class="features__item-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <h3 class="features__subitem-title">жильё</h3>
+              <p class="features__item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="features__subitem">
-              <h3 class="features__item-title">еда</h3>
-              <p class="features__item-desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h3 class="features__subitem-title">еда</h3>
+              <p class="features__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="features__subitem">
-              <h3 class="features__item-title">сувениры</h3>
-              <p class="features__item-desc">Не только китайского, но и местного производства!</p>
+              <h3 class="features__subitem-title">сувениры</h3>
+              <p class="features__item-text">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
         <li class="features__flex-container features__flex-container_wrap_rev">
           <div class="features__item features__item_theme_bright">
             <h3 class="features__item-title features__item-title_theme_bright">там есть Мост&nbsp;дьявола</h3>
-            <p class="features__item-desc">да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="features__item-text">да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <img class="features__image" src="./img/devils_bridge.jpg" width="800" height="256" alt="Мост Дьявола в Седоне">
+          <img class="features__image" src="./img/devils_bridge.jpg" width="800" alt="Мост Дьявола в Седоне">
         </li>
         <li class="features__item features__item_theme_grey">
           <h3 class="features__item-title">небольшая площадь</h3>
-          <p class="features__item-desc">все достопримечательности находятся&nbsp;очень близко</p>
+          <p class="features__item-text">все достопримечательности находятся&nbsp;очень близко</p>
         </li>
         <li class="features__item features__item_theme_grey">
           <h3 class="features__item-title">красивая дорога</h3>
-          <p class="features__item-desc">ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
+          <p class="features__item-text">ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
         </li>
         <li class="features__item features__item_theme_grey">
           <h3 class="features__item-title">мало туристов</h3>
-          <p class="features__item-desc">большинство едет в гранд каньон и&nbsp;толпится там</p>
+          <p class="features__item-text">большинство едет в гранд каньон и&nbsp;толпится там</p>
         </li>
       </ol>
     </section>
     <section class="interested">
-      <div class="interested-container"><!--чтобы было за что спрятать выезжающую форму-->
+      <div class="interested-container">
         <h2 class="interested__title">заинтересовались?</h2>
         <p class="interested__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
         <button class="page__button interested__button" type="button">Поиск гостиницы в Седоне</button>
@@ -124,12 +124,13 @@
       <section class="footer__column footer__column_content_contacts">
         <h2 class="visually-hidden">Связаться</h2>
         <p class="footer__paragraph">
-          <a class="footer__link" href="blank.html">#visitsedona</a> тел: <a class="footer__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+          <a class="footer__link" href="blank.html">#visitsedona</a>
+          тел: <a class="footer__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
         </p>
       </section>
-      <section class="footer__column footer__column_content_social">
+      <section class="footer__column_index footer__column_content_social">
         <h2 class="visually-hidden">Соцсети</h2>
-        <ul class="footer__social-buttons">
+        <ul class="footer__social-buttons footer__social-buttons_index">
           <li>
             <a class="footer__social-button" href="#">
               <span class="visually-hidden">Twitter</span>
@@ -150,7 +151,7 @@
           </li>
         </ul>
       </section>
-      <p class="footer__column footer__column_content_copyright">
+      <p class="footer__column_index footer__column_content_copyright">
         website by
         <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <span class="visually-hidden">HTML Academy</span>

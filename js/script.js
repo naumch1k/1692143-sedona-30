@@ -7,6 +7,7 @@ const adults = modal.querySelector('[name=adults]');
 const children = modal.querySelector('[name=children]');
 const adultsStorage = localStorage.getItem("adults");
 const childrenStorage = localStorage.getItem("children");
+const modalHidden = localStorage.getItem("modal-hidden");
 
 let isStorageSupport = true;
 let storage = "";
@@ -17,11 +18,18 @@ try {
   isStorageSupport = false;
 }
 
+if (modalHidden == "true" && isStorageSupport) {
+  modal.classList.add('modal_hidden');
+} else {
+  modal.classList.remove('modal_hidden');
+}
+
 interestedButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (modal.classList.contains("modal_hidden")) {
     modal.classList.remove('modal_hidden');
     modal.classList.remove('modal_error');
+    localStorage.setItem("modal-hidden", "false")
     moveIn.focus({preventScroll:true});
     if (adultsStorage) {
       adults.value = adultsStorage;
@@ -31,6 +39,7 @@ interestedButton.addEventListener("click", function (evt) {
     }
   } else {
     modal.classList.add('modal_hidden');
+    localStorage.setItem("modal-hidden", "true")
   }
 });
 
