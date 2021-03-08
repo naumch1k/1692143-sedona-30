@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -10,6 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body class="page-body">
   <header class="header">
     <a class="header__logo">
@@ -28,7 +30,7 @@
     <h1 class="visually-hidden">Седона</h1>
     <section class="welcome">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="weclome__svg" src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон отстой!">
+      <img class="welcome__svg" src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон отстой!">
     </section>
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -43,7 +45,7 @@
               <h3 class="features__item-title features__item-title_theme_bright">настоящий городок</h3>
               <p class="features__item-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="features__image" src="./img/true_village.jpg" width="800" alt="Кусты, американский флаг, красивое здание">
+            <img class="features__image" src="./img/true_village.jpg" width="800" height="256" alt="Кусты, американский флаг, красивое здание">
           </div>
           <ul class="features__sublist">
             <li class="features__subitem">
@@ -65,7 +67,7 @@
             <h3 class="features__item-title features__item-title_theme_bright">там есть Мост&nbsp;дьявола</h3>
             <p class="features__item-text">да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <img class="features__image" src="./img/devils_bridge.jpg" width="800" alt="Мост Дьявола в Седоне">
+          <img class="features__image" src="./img/devils_bridge.jpg" width="800" height="256" alt="Мост Дьявола в Седоне">
         </li>
         <li class="features__item features__item_theme_grey">
           <h3 class="features__item-title">небольшая площадь</h3>
@@ -92,12 +94,12 @@
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
           <label class="search-form__label">Дата заезда:
             <input class="search-form__field search-form__field_date" name="move-in" placeholder="24 апреля 2017">
-            <svg class="search-form__icon search-form__icon_calendar" width="21" height="23" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg>
           </label>
+          <button class="search-form__icon_calendar" type="button"><svg class="search-form__icon" width="21" height="23" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
           <label class="search-form__label">Дата выезда:
             <input class="search-form__field search-form__field_date" name="move-out" placeholder="4 июля 2017">
-            <svg class="search-form__icon search-form__icon_calendar" width="21" height="23" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg>
           </label>
+          <button class="search-form__icon_calendar" type="button"><svg class="search-form__icon" width="21" height="23" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg></button>
           <div class="modal__grid-container">
             <label class="search-form__label">Взрослые:
               <input class="search-form__field search-form__field_guest" name="adults" type="number" min="1" placeholder="2">
@@ -116,7 +118,8 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Интерактивная карта</h2>
-      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677242.5531886744!2d-112.83892611729397!3d34.80935418107472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2sus!4v1614030132337!5m2!1sru!2sus" width="1200" height="594" title="Карта Седоны"></iframe>
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677242.5531886744!2d-112.83892611729397!3d34.80935418107472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2sus!4v1614030132337!5m2!1sru!2sus"
+        width="1200" height="594" title="Карта Седоны"></iframe>
     </section>
   </main>
   <footer class="footer footer_index">
@@ -124,8 +127,7 @@
       <section class="footer__column footer__column_content_contacts">
         <h2 class="visually-hidden">Связаться</h2>
         <p class="footer__paragraph">
-          <a class="footer__link" href="blank.html">#visitsedona</a>
-          тел: <a class="footer__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+          <a class="footer__link" href="blank.html">#visitsedona</a> тел: <a class="footer__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
         </p>
       </section>
       <section class="footer__column_index footer__column_content_social">
@@ -140,7 +142,7 @@
           <li>
             <a class="footer__social-button" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg aria-hidden="true" focusable="false"  width="12" height="22" fill="currentColor"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+              <svg aria-hidden="true" focusable="false" width="12" height="22" fill="currentColor"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
             </a>
           </li>
           <li>
@@ -162,4 +164,5 @@
   </footer>
   <script src="js/script.min.js"></script>
 </body>
+
 </html>
