@@ -1,4 +1,4 @@
-  /* Fonts */
+/* Fonts */
   
   @font-face {
     font-family: "PTSans";
@@ -193,7 +193,7 @@
   
   .features__desc-title {
     max-width: 480px;
-    margin: 0 0 43px;
+    margin: 0 0 30px;
     color: var(--basic-black);
     font-size: 21px;
     font-weight: bold;
@@ -371,12 +371,6 @@
   .interested__text {
     max-width: 435px;
     margin: 0 auto 44px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
   
   .interested__button {
@@ -704,7 +698,7 @@
     color: var(--light-grey);
   }
 
-  /*CATALOG.html*/
+  /*Where-to-stay.html*/
 
   /*Filter*/
   
@@ -770,7 +764,7 @@
   }
   
   .fieldset {
-    width: 120px;
+    width: 130px;
     padding: 0;
     margin: 0;
     border: none;
@@ -988,10 +982,10 @@
     padding: 30px 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: -webkit-max-content -webkit-min-content -webkit-max-content;
-    -ms-grid-columns: max-content min-content max-content;
-    grid-template-columns: -webkit-max-content -webkit-min-content -webkit-max-content;
-    grid-template-columns: max-content min-content max-content;
+    -ms-grid-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+    -ms-grid-columns: max-content max-content max-content;
+    grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content max-content;
   }
   
   .sort__found {
@@ -1149,10 +1143,17 @@
   .hotel-card__paragraph {
     margin: 0;
   }
-  
-  .hotel-card__button_more {
+
+  .hotel-card__button {
     max-width: 200px;
     padding: 3px 17px 3px 16px;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .hotel-card__button_more {
     color: var(--basic-white);
     background-color: var(--basic-blue);
     font-weight: bold;
@@ -1169,8 +1170,6 @@
   }
   
   .hotel-card__button_reserve {
-    max-width: 200px;
-    padding: 3px 18px 3px 16px;
     background-color: var(--basic-brown);
   }
   
