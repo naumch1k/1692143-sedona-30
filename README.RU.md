@@ -1,8 +1,8 @@
 # Учебный проект: Седона
 
-*Read this in other languages:* [EN](https://github.com/naumch1k/1692143-sedona-30/blob/feature/eng/README.md)
+*Read this in other languages:* [EN](https://github.com/naumch1k/1692143-sedona-30/blob/feature/eng/Readme.md)
 
-[Проектная работа на GitHub Pages]()
+[Проектная работа на GitHub Pages](https://naumch1k.github.io/1692143-sedona-30/index.html)
 
 ## Описание проекта
 Учебный проект [HTML Academy](https://htmlacademy.ru/intensive/htmlcss "Профессиональная вёрстка сайтов") - поиск жилья в маленьком американском городке Аризоны.
