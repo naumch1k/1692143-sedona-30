@@ -1,6 +1,6 @@
 # Учебный проект: "Седона"
 
-*Read this in other languages:* [EN]() 
+*Read this in other languages:* [EN](https://github.com/naumch1k/1692143-sedona-30/blob/master/Readme.md) 
 
 [GitHub Pages Link](https://naumch1k.github.io/1692143-sedona-30/index.html)
 

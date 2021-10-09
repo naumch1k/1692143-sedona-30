@@ -1,6 +1,6 @@
 # Portfolio project: "SEDONA"
 
-*Read this in other languages:* [RU]() 
+*Read this in other languages:* [RU](https://github.com/naumch1k/1692143-sedona-30/blob/master/README.RU.md) 
 
 [GitHub Pages Link](https://naumch1k.github.io/1692143-sedona-30/index.html)
 
